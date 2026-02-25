@@ -61,9 +61,11 @@ export function HeroSection() {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
-          <Button variant="outline" size="xl" className="gap-2 group">
-            <Play className="h-4 w-4 group-hover:scale-110 transition-transform" />
-            Watch Demo
+          <Button variant="outline" size="xl" className="gap-2 group" asChild>
+            <Link href="/demo">
+              <Play className="h-4 w-4 group-hover:scale-110 transition-transform" />
+              Watch Demo
+            </Link>
           </Button>
         </motion.div>
 
